@@ -1,0 +1,136 @@
+<h1>Brothers In Arms WW2 Arma Community ACRE 2 RADIO GUIDE</h1>
+<h3>What is ACRE2?</h3>
+<p>The core feature of ACRE has always been radios, which has undergone major improvements in ACRE2. A new, extremely powerful and modular distributed data system allows for a whole manner of new features to be simulated in a robust and reliable way, and powers the most realistic real time radio simulation released in either the civilian or military market.</p>
+<h3>ACRE2 Features</h3>
+<ul>
+<li>Real time voice occlusion for world objects, including buildings.</li>
+<li>Babel language system that allows you to implement virtual languages on other players.</li>
+<li>Multi-channel audio, allowing people on the radio to be heard locally as well.</li>
+<li>Radios with external speakers.</li>
+<li>A highly detailed AN/PRC-148 simulation (still a WIP implementing all features).</li>
+<li>Increased performance and stability.</li>
+<li>A highly customizable and documented framework for the creation of radios.</li>
+<li>A highly customizable and documented framework for implementing different game modes (persistent world, replays, logging, external data storage, external radio control).</li>
+<li>Customizable sound configs that allow traditional patching of sounds played in ACRE via Arma addons.</li>
+<li>Customizable radio presets, allowing groups to define radio presets in additional addons for mission makers to take advantage of (also see the F3 framework).
+Enhanced and easily configurable vehicle sound occlusion and intercoms.</li>
+</ul>
+<h2>How to install ACRE2:</h2>
+<ul>
+<li>Normally, when you first download the repo, or acre has updated, A3sync will prompt a auto install for acre. However, if this fails use the steps below.</li>
+</ul>
+<ol>
+<li>Navigate to your arma 3 directory</li>
+<li>Navigate to  the @ACRE2\plugin folder</li>
+<li>Once in the plugin folder, you will have two DLLS required for ACRE2 to communicate with TeamsSpeak 3.</li>
+<li>Copy / cut these dlls into: TeamSpeak 3 Client\plugins</li>
+<li>Running TS3 as Administrator, go to Settings &gt; Plugins and turn on the ACRE2 plugin.</li>
+<li>Adjust the post and pre mix volumes to your liking in plugin settings.</li>
+</ol>
+<h2>List of ACRE2 Radios:</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:center">Range</th>
+<th style="text-align:center">Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><em>PRC 343</em></td>
+<td style="text-align:center">1 km</td>
+<td style="text-align:center">1 kg</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>PRC 148</em></td>
+<td style="text-align:center">6-8 km</td>
+<td style="text-align:center">2 kg</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>PRC 152</em></td>
+<td style="text-align:center">6-15 km</td>
+<td style="text-align:center">3 kg</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>PRC 77</em></td>
+<td style="text-align:center">20-30 km</td>
+<td style="text-align:center">4 kg</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>PRC 177</em></td>
+<td style="text-align:center">20-30 km</td>
+<td style="text-align:center">5 kg</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Default keybinds</h2>
+<h5>It is highly recommend you change these to your liking by going to Controls&gt;Configure Addons &gt; ACRE2</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Action</th>
+<th style="text-align:center">Keybind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><em>Volume control</em></td>
+<td style="text-align:center">Tab</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Default Radio key</em></td>
+<td style="text-align:center">Capslock</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Radio Left Ear</em></td>
+<td style="text-align:center">Ctrl+Shift+Left Arrow</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Radio Right Ear</em></td>
+<td style="text-align:center">Ctrl+Shift+Right Arrow</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Radio Center Ear</em></td>
+<td style="text-align:center">Ctrl+Shift+Up Arrow</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Toggle Headset</em></td>
+<td style="text-align:center">Ctrl+Shift+Down Arrow</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Cycle Radio</em></td>
+<td style="text-align:center">Ctrl+Alt+Shift</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>Open Radio</em></td>
+<td style="text-align:center">Ctrl+Alt+Capslock</td>
+</tr>
+</tbody>
+</table>
+<h2>Further reading into Radio Communications</h2>
+<h4>Basic Radio Etiquette:</h4>
+<p>If there is one thing you take out of this guide, I hope it comes from this section. It is essential that when you speak over radios such as the 148 or 117 as a squad leader, platoon leader, or an attached asset that you follow these formats when you speak.</p>
+<h4>Call-signs:</h4>
+<p>Every squad leader, attached asset, and platoon leader who is utilizing a 148 or a 117 should have a designated call-sign. This is to ensure that everyone knows who is speaking and to whom they are speaking to. Here is an example where each squad within the platoon is given a phonetic name to identify themselves with; the platoon leader is given the moniker “Command” to identify himself with. On a side note, it would greatly benefit you to learn at least the first ten letters of the phonetic alphabet if you do not already know them.</p>
+<h4>Initiating and Responding to Calls:</h4>
+<p>This is just about the most important piece of radio etiquette, initiating a call with another unit properly. To do this is very simple; simply say “You, this is me.” As an example if you are in command of Alpha squad and trying to contact command you would say “Command, this is Alpha” to which Command would respond with something along the lines of “Alpha this is Command, send it.” At this point you would then proceed to tell Command or whoever whatever it is that you need to tell him or her.</p>
+<p>If someone is calling you over the radio, but you do not have time to listen to whatever they need to say due to combat or some other pressing matter do not be afraid to respond with “You this is me, wait.” Once you have the ability to listen to what they need to tell you though, do not forget to reinitiate the conversation with “You this is me” at which point they must now acknowledge you before you proceed to inquire about what they wanted to tell you.</p>
+<p>If you are trying to initiate contact with someone and they do not respond within 15 seconds do not be afraid to try and raise them again, however after the third attempt of making contact and failing it may be time to dispatch a squad to search for the missing squad or platoon commander.</p>
+<h4>Brevity:</h4>
+<p>Once the conversation has been initiated, keep your message simple and short. Think of what you’re going to say before you begin to transmit over the radios, do not “umm” and “uhh” over the radio. Keep it brief, no more than 10-15 seconds maximum. If you lose your train of thought while speaking over either a 148 or 117 simply state “Wait one” and take a moment to collect your thoughts before re-initiating the conversation. Remember, keep it brief, keep it brief, and keep it brief.</p>
+<h4>Acknowledging Speakers:</h4>
+<p>Make sure you always acknowledge the person who is speaking to you, even if what they are telling you does not require you to give some sort of a response. After someone speaks to you over the radio simply state something such as “Roger” to let them know that you have heard what they had to say and understand it. Should you fail to hear what someone said or did not quite understand what they were saying do not be afraid to say something such as “You this is me, repeat your last” at which point the previous speaker should restate their message to you.</p>
+<h2>Example Conversation</h2>
+<p>So if you’re still confused about how to put all this together, here’s an example diagram of how a conversation can go. In this example, we’ll follow a conversation between Alpha squad’s team leader, and the platoon commander.</p>
+<p><a href="https://vgy.me/lMUCwW.png">PICTURE</a></p>
+<h2>Troubleshooting</h2>
+<ul>
+<li>Go through every step again.</li>
+<li>Restart Teamspeak.</li>
+<li>Try downgrading TS. (Make sure you're on 0.12)</li>
+<li>Make sure you have Microsoft Visual C++ 2010 redists installed</li>
+<li>Make sure ArmA and Teamspeak are installed on the same harddrive.</li>
+<li>Run Arma as Administrator as well as TS3.</li>
+</ul>

@@ -2,18 +2,22 @@
   .two.column.row
     .field.column
       label Event name
-      input.js-event-name(type='text', name='name' placeholder="Operation FPARMA" autofocus)
+      input.js-event-name(type='text', name='name' placeholder="Event Name" autofocus)
   .event-type.column
     .inline.fields.js-event-type
       .field
         .ui.radio.checkbox
-          input#radio-co(type='radio', checked="" name='type', value='CO')
+          input#radio-co(type='radio', checked="" name='type', value='COOP')
           label(for='radio-co')
-            b CO
+            b COOP
       .field
         .ui.radio.checkbox
           input#radio-tvt(type='radio', name='type', value='TVT')
-          label(for='radio-tvt') TvT
+          label(for='radio-tvt') TVT
+      .field
+        .ui.radio.checkbox
+          input#radio-cotvt(type='radio', name='type', value='COTVT')
+          label(for='radio-cotvt') COTVT
   .one.column.row
     .field.column
       label Event description

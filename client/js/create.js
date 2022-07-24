@@ -56,7 +56,7 @@
   var MAX_UNITS_IN_GRP = 20
   var GRP_TEMPLATE = $($('#js-grp-template').html())
   var UNIT_TEMPLATE = $($('#js-unit-template').html())
-  var SLOT_SIDES = ['blufor', 'opfor', 'greenfor', 'civilian']
+  var SLOT_SIDES = ['blufor', 'opfor', 'indfor', 'civilian']
 
   var btnManual = $('#js-slots-btn-manual')
   var btnSqm = $('#js-slots-btn-sqm')

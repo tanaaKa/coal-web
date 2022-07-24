@@ -399,7 +399,7 @@
     var $info = $('#server-info')
     if (!$info.length) return
     var onFail = function () {
-      var d = $('<h4>Failed to get server info</h4>')
+      var d = $('<h4>Server info can be found on the wiki</h4>')
       $info.removeClass('loading')
       .append(d.hide().fadeIn('slow'))
     }

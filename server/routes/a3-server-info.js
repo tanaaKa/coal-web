@@ -1,4 +1,4 @@
-import query from 'game-server-query'
+const Gamedig = require('gamedig');
 import {secondsToHHMMSS} from '../utils/date-util'
 
 const ISLANDS = {
@@ -16,7 +16,7 @@ function getCached () {
   if ((Date.now() - lastUpdated) > ttl) cached = null
   if (cached) return cached
   return {
-    name: '[EU] Facepunch OP Server [Hosted by Comfy]',
+    name: '',
     state: 'unknown'
   }
 }
@@ -37,40 +37,21 @@ export default function (req, res, next) {
 }
 
 function getA3ServerInfo () {
-  return new Promise((resolve, reject) => {
-    query({
-      type: 'arma3',
-      host: 'fparma.com'
-    }, d => {
-      let ret = {}
-      if (d.error) {
-        console.error(d.error)
-        ret = getCached()
-      } else {
-        ret.name = d.name
-        ret.adress = `${d.query ? d.query.address : 'fparma.com'}:${d.query ? d.query.port : '2302'}`
-        ret.players = d.players.map(v => {
-          return {
-            name: v.name || 'unknown',
-            time: v.time ? secondsToHHMMSS(v.time).substring(0, 5) : 0
-          }
-        })
-        ret.state = ret.players.length ? 'playing' : 'waiting'
-        ret.mission = d.raw ? d.raw.game : 'Unknown'
-        let island = ISLANDS[(d.map || '').toLowerCase()]
-        ret.island = island ? island : d.map
-        ret.maxPlayers = ret.players.length ? d.maxplayers : 99
-      }
-      resolve(ret)
-    })
-  })
+	Gamedig.query({
+		type: 'arma3',
+		host: 'arma.coalitiongroup.net'
+	}).then((state) => {
+		console.log(state);
+	}).catch((error) => {
+		console.log("Server is offline");
+	});
 }
 
 function getTS3Info () {
   return new Promise((resolve, reject) => {
     query({
       type: 'ts3',
-      host: '31.7.186.230'
+      host: 'ts.coalitiongroup.net'
     }, function (d) {
       if (d.error || !d.raw) {
         if (d.error) console.warn(d.error)

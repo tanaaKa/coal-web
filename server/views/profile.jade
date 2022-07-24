@@ -36,16 +36,16 @@ block content
       p You have signed up for 
         b #{locals.attendedEvents || 0} 
         | events.
-      form#squad-form.ui.form.mt-top2(method='POST', action='/profile/squad')
-        h2.ui.dividing.header Squad.xml settings
-        p Squad.xml in a way to show which group you belong to in Arma3.
-          | Note that when changing the settings below, updates will not be instant
-          | as A3 servers will cache the file for a while.
-        p To get the below info into the game, add the below URL 
-          a(target='_blank' href='https://community.bistudio.com/wiki/squad.xml#How_to_use_it_as_a_team-member')
-            | to your profile in Arma3
+        //- form#squad-form.ui.form.mt-top2(method='POST', action='/profile/squad')
+          h2.ui.dividing.header Squad.xml settings
+          p Squad.xml in a way to show which group you belong to in Arma3.
+            | Note that when changing the settings below, updates will not be instant
+            | as A3 servers will cache the file for a while.
+          p To get the below info into the game, add the below URL 
+            a(target='_blank' href='https://community.bistudio.com/wiki/squad.xml#How_to_use_it_as_a_team-member')
+              | to your profile in Arma3
 
-        .ui.two.column.stackable.grid
+        //-.ui.two.column.stackable.grid
           .two.column.row
             .field.column
               input#js-url(type="text" readonly)
@@ -57,11 +57,11 @@ block content
                     inp.get(0).setSelectionRange(0, inp.val().length)
                   })
                 })
-          .two.column.row.mt-top2
-            .field.column
-              .ui.toggle.checkbox
-                input#squad-xml-accept(type='checkbox', name='add', value="on", checked=(locals.squadSettings.show))
-                label(for='squad-xml-accept') Add me to squad.xml
+          //-.two.column.row.mt-top2
+              .field.column
+                .ui.toggle.checkbox
+                  input#squad-xml-accept(type='checkbox', name='add', value="on", checked=(locals.squadSettings.show))
+                  label(for='squad-xml-accept') Add me to squad.xml
           .two.column.row.js-squad(class=locals.squadSettings.show ? '' : 'invis')
             .field.column
               label Nickname (<span style="color: red">MUST</span> match your in-game nick) 
@@ -76,6 +76,6 @@ block content
                 placeholder='Something about me',
                 value=(locals.squadSettings.remark && locals.squadSettings.remark !== 'N/A' ? locals.squadSettings.remark : false)
               )
-          .row
+          //-.row
             .column
               button(type='submit').ui.primary.submit.button Save changes

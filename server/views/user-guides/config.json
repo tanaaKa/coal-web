@@ -1,19 +1,24 @@
 {
   "guides": [
     {
-      "url": "https://wiki.fparma.com/Swifty",
-      "menuTitle": "Installing our modpack",
+      "url": "https://coalitiongroup.net/wiki/index.php/Getting_Started",
+      "menuTitle": "Getting Started",
       "menuPriority": 100
+    },
+	{
+      "url": "https://coalitiongroup.net/wiki/index.php/Installing_our_modpack",
+      "menuTitle": "Installing our Modpack",
+      "menuPriority": 90
     },
     {
       "file": "medical.md",
       "menuTitle": "ACE3 Adv. medical",
-      "menuPriority": 90
+      "menuPriority": 80
     },
     {
-      "file": "acre.md",
-      "menuTitle": "Installing and configuring ACRE2",
-      "menuPriority": 80
+      "url": "https://coalitiongroup.net/wiki/index.php/Communication_and_Marking",
+      "menuTitle": "ACRE2 and Communication",
+      "menuPriority": 70
     }
   ]
 }

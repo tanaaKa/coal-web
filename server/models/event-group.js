@@ -2,7 +2,7 @@
 import mongoose from 'mongoose'
 const Schema = mongoose.Schema
 
-const SIDES = ['blufor', 'opfor', 'greenfor', 'civilian']
+const SIDES = ['blufor', 'opfor', 'indfor', 'civilian']
 const MIN = 2
 const MAX = 24
 let msgMin = (str) => `${str} must have at least ${MIN} characters`

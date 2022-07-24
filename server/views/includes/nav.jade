@@ -9,10 +9,10 @@ mixin mklink(page, url, cl)
 
 nav.ui.fixed.large.inverted.menu(role='menubar')
   .ui.container.desktop-only
-    a.header.item(href='/', role='link' class = (locals.page === 'home' ? 'active': ''))
-      span.title FPARMA
+    a.header.item(href='https://coalitiongroup.net/arma/', role='link' class = (locals.page === 'home' ? 'active': ''))
+      span.title COALITION
+    +mklink('Dashboard', '/')
     +mklink('Events', '/events')
-    +mklink('Media', '/media')
     if (locals.app.userGuides)
       .ui.compact.dropdown.item(class=locals.topMenu==='guides' ? 'force selected': '')
         a Guides
@@ -20,8 +20,6 @@ nav.ui.fixed.large.inverted.menu(role='menubar')
           each guide in locals.app.userGuides
             +mklink(guide.title, guide.url, (guide.title === locals.title ? 'active': ''))
 
-    +mklink('Rules', '/rules')
-    +mklink('About', '/about')
 
     if (locals.user && locals.user.admin)
       .ui.compact.dropdown.item(class=locals.topMenu==='admin' ? 'force selected': '')
@@ -73,4 +71,4 @@ nav.ui.fixed.large.inverted.menu(role='menubar')
       else
         +mklink('Login / Register', '/login', 'right')
   a.header.item.right.mobile-only(href='/', role='link', class=(locals.page == 'home' ? 'active' : ''))
-    span.title FPARMA
+    span.title COALITION

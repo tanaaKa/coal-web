@@ -29,8 +29,8 @@ const EventSchema = new Schema({
     required: true,
     lowercase: true,
     enum: {
-      values: ['co', 'tvt'],
-      message: 'Type must be CO or TVT'
+      values: ['coop', 'tvt', 'cotvt'],
+      message: 'Type must be COOP, TVT, or COTVT'
     }
   },
   authors: {

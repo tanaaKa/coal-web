@@ -4,7 +4,7 @@ import _ from 'lodash'
 const SIDES_MAP = {
   WEST: 'blufor',
   EAST: 'opfor',
-  INDEPENDENT: 'greenfor',
+  INDEPENDENT: 'indfor',
   CIVILIAN: 'civilian'
 }
 const sides = Object.keys(SIDES_MAP)

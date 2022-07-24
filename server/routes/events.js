@@ -126,7 +126,7 @@ router.post('/create/upload-sqm', upload, (req, res, next) => {
   // FIXME: multer doesn't give an error for filesize atm
   if (!req.file) return next(new Error('Upload failed'))
   readFile(req.file.path, 'utf8', (err, data) => {
-    unlink(req.file.path)
+    unlink(req.file.path,function(){})
     if (err) return next(err)
 
     sqmParser(data, (err, parsed) => {

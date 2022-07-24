@@ -59,8 +59,8 @@ block content
     h2 Slots
     p Please consider filling groups before taking a slot in an empty group.
 
-    -list=['blufor', 'greenfor', 'opfor', 'civilian']
-    -sideColor = {blufor: 'blue', opfor: 'red', greenfor: 'green', civilian: 'purple'}
+    -list=['blufor', 'indfor', 'opfor', 'civilian']
+    -sideColor = {blufor: 'blue', opfor: 'red', indfor: 'green', civilian: 'purple'}
     each side in list
       -grps = event.groups.filter(function (v) {return v.side === side})
       if (grps.length)
