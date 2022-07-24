@@ -1,11 +1,13 @@
 # COALITION EVENTS, based on FPARMA-WEB
-A modernization effort of the FPARMA website for use with coalition events
+A modernization effort of the FPARMA website for use with coalition events as an extension of the website
 
 #### Instructions
+NOTE: Does not currently support the latest node version
 1. Clone repo
-2. Go to folder in terminal and do "npm install"
-3. Copy config.example.json and change settings
-4. Start mongod process
+2. Install node 11.0.0 (nvm recommended)
+3. Install mongodb and start a thread
+4. Run npm install
+5. Copy config.example.json and change settings
 5. Start server by entering "gulp dev"
 
 ## Setting ENV
