@@ -1,6 +1,5 @@
 # COALITION EVENTS, based on FPARMA-WEB
-
-## A modernization effort of the FPARMA website for use with coalition events
+A modernization effort of the FPARMA website for use with coalition events
 
 #### Instructions
 1. Clone repo
