@@ -1,5 +1,5 @@
 # COALITION EVENTS, based on FPARMA-WEB
-A modernization effort of the FPARMA website for use with coalition events as an extension of the website
+A modernization effort of the [FPARMA website](https://fparma.herokuapp.com) for use with [COALITION events](https://events.coalitiongroup.net) as an extension of the website
 
 ## Foreword
 I'm a .NET enterprise dev trudging my way through node/js. Many of these changes may contain incorrect js uses/environs, but otherwise function for the time being. Any updates from more experienced js devs are appreciated.
