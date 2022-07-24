@@ -1,9 +1,6 @@
-# FPARMA-WEB
+# COALITION EVENTS, based on FPARMA-WEB
 
-## FPARMA's website with event signup
-
-### Requirements (local dev)
- **MongoDB, Node.js, gulp installed (npm i -g gulp)**
+## A modernization effort of the FPARMA website for use with coalition events
 
 #### Instructions
 1. Clone repo
