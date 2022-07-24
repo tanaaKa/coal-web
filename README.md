@@ -1,7 +1,10 @@
 # COALITION EVENTS, based on FPARMA-WEB
 A modernization effort of the FPARMA website for use with coalition events as an extension of the website
 
-#### Instructions
+## Foreword
+I'm a .NET enterprise dev trudging my way through node/js. Many of these changes may contain incorrect js uses/environs, but otherwise function for the time being. Any updates from more experienced js devs are appreciated.
+
+## Instructions
 NOTE: Does not currently support the latest node version
 1. Clone repo
 2. Install node 11.0.0 (nvm recommended)
