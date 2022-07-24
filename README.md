@@ -8,7 +8,7 @@ I'm a .NET enterprise dev trudging my way through node/js. Many of these changes
 NOTE: Does not currently support the latest node version
 1. Clone repo
 2. Install node 11.0.0 ([nvm](https://nvm.sh) recommended)
-3. Install mongodb and start a thread
+3. Install [MongoDB](https://www.mongodb.com) and start a thread
 4. Run npm install
 5. Copy config.example.json and change settings
 5. Start server by entering "gulp dev"
